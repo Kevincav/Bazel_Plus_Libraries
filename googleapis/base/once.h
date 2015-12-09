@@ -22,7 +22,7 @@
 #ifndef _MSC_VER
 #include <pthread.h>
 #endif
-#include <glog/logging.h>
+#include "glog/logging.h"
 #include "googleapis/base/port.h"
 namespace googleapis {
 

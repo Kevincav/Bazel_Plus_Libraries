@@ -18,8 +18,8 @@
  */
 #include "googleapis/base/callback.h"
 
+#include "glog/logging.h"
 #include "googleapis/base/mutex.h"
-#include <glog/logging.h>
 
 namespace googleapis {
 

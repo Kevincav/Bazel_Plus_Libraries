@@ -30,9 +30,9 @@
 #endif
 #include <stdint.h>
 
+#include "glog/logging.h"
 #include "googleapis/base/integral_types.h"
 #include "googleapis/base/macros.h"
-#include <glog/logging.h>
 #include "googleapis/base/thread_annotations.h"
 namespace googleapis {
 
