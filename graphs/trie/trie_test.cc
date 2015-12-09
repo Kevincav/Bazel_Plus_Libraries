@@ -14,8 +14,15 @@ class TrieTest : public ::testing::Test {
 };
 
 TEST_F(TrieTest, TestInsertWorksWithErrorCodes) {
-    googleapis::util::Status status = trie_->Insert("Hello");
-    EXPECT_TRUE(status.ok());
+  googleapis::util::Status status = trie_->Insert("Hello");
+  EXPECT_TRUE(status.ok());
+}
+
+TEST_F(TrieTest, TestFindWorksWithErrorCodes) {
+  googleapis::util::Status status = trie_->Insert("Hello");
+  EXPECT_TRUE(status.ok());
+  status = trie_->Find("Hello");
+  EXPECT_TRUE(status.ok()) << status.error_message();
 }
 
 int main(int argc, char *argv[]) {

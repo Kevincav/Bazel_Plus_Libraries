@@ -10,7 +10,7 @@
 #include "googleapis/util/status.h"
 
 struct Node {
-  Node() : is_valid_string(false) {}
+  Node() : is_valid_string(false) { children.resize(26); }
   bool is_valid_string;
   std::vector<std::unique_ptr<struct Node>> children;
 };
